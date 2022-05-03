@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import CreatePost from './Components/CreatePost/CreatePost'
 import NavBar from './Components/NavBar/NavBar';
+import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
 import './App.css';
 
 
 function App() {
 
-  const [posts, setPosts] = useState([{name: 'Andrew Cole', post: 'Does anyone else like tacos as much as I do?'}])
+  const [posts, setPosts] = useState([
+    {name: 'Andrew Cole', post: 'Does anyone else like tacos as much as I do?'},
+    {name: 'Leah Cole', post: 'Mhm, you know I love me some Taco Tuesday!'}])
+    
+
+  
 
   function addNewPost(post){
     let tempPosts = [...posts, post];
@@ -17,11 +23,10 @@ function App() {
   return (
     <div>
     <NavBar/>
-    <div className='main-feed'>
-      <CreatePost addNewPostProperty={addNewPost} />
-    <div/>
-     </div>
-      </div>
+    <CreatePost addNewPostProperty={addNewPost} />
+    <DisplayPosts parentPosts={posts} />
+    </div>
+    
   );
 }
   

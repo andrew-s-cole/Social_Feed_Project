@@ -20,11 +20,12 @@ const CreatePost = (props) => {
     return (
         <form onSubmit={handleSubmit}>
             <div className='form-group'>
-                <label>Name</label>
-                <input type='text' className='name' value={name} onChange={(event) => setName(event.target.value)} />
+                <label style={{margin: '20px'}}>Name :</label>
             </div>
+            <input type='text' className='name' value={name} onChange={(event) => setName(event.target.value)} />
+            
             <div className='form-group'>
-            <label>Post</label>
+                <label style={{margin: '20px'}}>Post :</label>
             <input type='text' className='post' value={post} onChange={(event) => setpost(event.target.value)} />
             </div>
 

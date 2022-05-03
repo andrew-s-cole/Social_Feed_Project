@@ -1,0 +1,29 @@
+.display-post {
+    margin: 5px;
+    border-color: black;
+    padding: 1em;
+    border-style: solid;
+    width: 50%;
+    margin-left: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: grid;
+}
+
+.post-post {
+    font-size: medium;
+    width: 100%;
+    margin-top: 25px;
+    margin-left: 25px;
+    font-weight: bold;
+    
+
+}
+
+.post-name {
+    font-size: medium;
+    width: 100%;
+    margin-top: 50px;
+    font-style: italic;
+    
+}
