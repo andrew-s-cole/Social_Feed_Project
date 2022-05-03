@@ -1,0 +1,21 @@
+.name {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    width: 20%;
+    padding: .5em
+}
+
+.post{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    width: 20%;
+    padding: 3em
+}
+
+.button {
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-top: 1px;
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import CreatePost from './Components/CreatePost/CreatePost'
+import NavBar from './Components/NavBar/NavBar';
 import './App.css';
 
 
@@ -14,9 +15,12 @@ function App() {
   }
 
   return (
+    <div>
+    <NavBar/>
     <div className='main-feed'>
       <CreatePost addNewPostProperty={addNewPost} />
-      <div/>
+    <div/>
+     </div>
       </div>
   );
 }
