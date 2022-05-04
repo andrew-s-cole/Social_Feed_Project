@@ -2,21 +2,21 @@ import React, { useState } from 'react';
 import './Post.css'
 
 const Post = (props) => {
-    const [like, setLike] = useState('unselected')
-    const [dislike, setDislike] = useState('unselected')
+    const [like, setLike] = useState('inactive')
+    const [dislike, setDislike] = useState('inactive')
 
     function clickLike() {
-        if(like === 'unselected') {
-            setLike('selected')
+        if(like === 'inactive') {
+            setLike('active')
         }else{
-            setLike('unselected')
+            setLike('inactive')
         }
     }
     function clickDislike() {
-        if(dislike === 'unselected') {
-            setDislike('selected')
+        if(dislike === 'inactive') {
+            setDislike('active')
         }else{
-            setDislike('unselected')
+            setDislike('inactive')
         }
     }
     return (

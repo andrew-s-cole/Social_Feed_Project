@@ -1,8 +1,8 @@
-.selected {
+.active {
     background-color: lightseagreen;
 }
 
 
-.unselected {
+.inactive {
     background-color: white;
 }
