@@ -1,5 +1,6 @@
 import React from 'react';
 import './DisplayPosts.css'
+import Post from '../Post/Post';
 
 const DisplayPosts = (props) => {
     return(
@@ -12,6 +13,7 @@ const DisplayPosts = (props) => {
                             <td>{post.name}</td>
                         <div className='post-post'>
                             <td>{post.post}</td>
+                            <Post></Post>
                         </div>
                     </div>
                     </tr>
