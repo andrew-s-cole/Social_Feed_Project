@@ -6,6 +6,9 @@ import './App.css';
 
 
 function App() {
+  document.body.style.backgroundColor = 'lightblue'
+
+  
 
   const [posts, setPosts] = useState([
     {name: 'Andrew Cole', post: 'Does anyone else like tacos as much as I do?'},
@@ -22,10 +25,12 @@ function App() {
 
   return (
     <div>
+      
     <NavBar/>
-    <CreatePost addNewPostProperty={addNewPost} />
+    <CreatePost className='border-box' addNewPostProperty={addNewPost} />
     <DisplayPosts parentPosts={posts} />
     </div>
+    
     
   );
 }

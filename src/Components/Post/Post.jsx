@@ -7,14 +7,14 @@ const Post = (props) => {
 
     function clickLike() {
         if(like === 'unselected') {
-            setLike('like-selected')
+            setLike('selected')
         }else{
             setLike('unselected')
         }
     }
     function clickDislike() {
         if(dislike === 'unselected') {
-            setDislike('dislike-selected')
+            setDislike('selected')
         }else{
             setDislike('unselected')
         }

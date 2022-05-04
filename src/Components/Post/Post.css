@@ -1,10 +1,7 @@
-.like-selected {
-    background-color: green;
+.selected {
+    background-color: lightseagreen;
 }
 
-.dislike-selected {
-    background-color: red;
-}
 
 .unselected {
     background-color: white;
