@@ -8,18 +8,20 @@ const Post = (props) => {
     function clickLike() {
         if(like === 'unselected') {
             setLike('like-selected')
-
+        }else{
+            setLike('unselected')
         }
     }
     function clickDislike() {
         if(dislike === 'unselected') {
             setDislike('dislike-selected')
-        
+        }else{
+            setDislike('unselected')
         }
     }
     return (
         <div>
-        <button className={like} onClick={clickLike}>Like</button>
+        <button style={{margin: '5%'}} className={like} onClick={clickLike}>Like</button>
         <button className={dislike} onClick={clickDislike}>Dislike</button>
         </div>
     )
